@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style/contact.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="img/logo.png" alt="logo" class="logo">
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="img/menu.svg" alt="menu" class="menu" id="menu">
+                </a>    
+
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="img/exit.svg" alt="exit menu"></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="travel.html">Travel</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header> 
+        <section>
+            <h1>Contact Me</h1>
+        </section> 
+    </div>
+    <div class="container">
+        <div class="form-container">
+            <ul>
+                <li>
+                    <form action="https://formspree.io/anjalijustice@gmail.com" method="POST">
+                        <div class="row">
+                        <div class="col-25">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="name" name="name" placeholder="Your name..">
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="mail">Email</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="mail" name="mail" placeholder="Your email..">
+                            </div>
+                            </div>
+                        <div class="row">
+                        <div class="col-25">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="subject" name="subject">
+                            <option value="Engineering">Engineering</option>
+                            <option value="Aviation">Aviation</option>
+                            <option value="Travel">Travel</option>
+                            <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="col-25">
+                            <label for="message">Message</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                        </div>
+                        </div>
+                        <div class="row">
+                        <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </li>
+                <li>
+                    <div class="contact-info hide-mobile">
+                        <h1>Anjali Justice</h1>
+                        <p>Email: anjalijustice@gmail.com</p>
+                        <p>Phone: 810 280 9190</p>
+                        <p>Social: @anjalijustice</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <ul class="linkedin">
+                    <li><a href="https://www.linkedin.com/in/anjalijustice">linkedin.com/in/anjalijustice</a></li>
+                    <li><a href="https://www.gmail.com">justanj@umich.edu</a></li>
+                    <li><a href="AnjaliResume2019.pdf">View my Resume</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    var menu = document.getElementById('menu');
+    var nav = document.getElementById('nav');
+    var exit = document.getElementById('exit');
+    var list = document.getElementById('list');
+
+    menu.addEventListener('click', function(e) {
+        nav.classList.toggle('hide-mobile');
+        e.preventDefault();
+    });
+    
+    exit.addEventListener('click', function(e) {
+        nav.classList.add('hide-mobile');
+        e.preventDefault();
+    });
+    // hello
+
+</script> 
+</html>

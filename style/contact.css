@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+p, blockquote {
+    font-size: 1.5em;
+    line-height: 1.6em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;    
+}
+
+h1 {
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+.exit-btn {
+    text-align: right;
+    margin: 0 5% 2% 0;
+    padding: 6% 12%;
+    
+}
+
+nav ul {
+    position: absolute;
+    width: 30%;
+    top: 2%;
+    right: 0;
+    text-align: left;
+    background: rgb(36,41,44);
+    height: auto;
+    z-index: 7;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: rgb(52,59,63);
+}
+
+nav ul li a:hover {
+    background-color: rgb(65,73,78)
+}
+
+.container {
+    text-align: center;
+    padding: .8em 1.2em;
+}
+
+.contact-info {
+    text-align: left;
+    margin-left: 15%;
+}
+.logo {
+    width: 80px;
+    height: 50px;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    z-index: 1;
+}
+
+.menu {
+    width: 25px;
+    margin-top: 50%;
+}
+
+section h1 {
+    font-size: 2.7em;
+    margin: 5% 0 0 0;
+}
+
+footer {
+    background: #5D5D5D;
+    color: white;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 5em;
+}
+
+footer hr {
+    border-color: #BDF3F0;
+}
+
+.cta {
+    color: black;
+    background: #BDF3F0;
+    width: calc(50% - 5em);
+    display: block;
+    border-radius: 20px;
+    padding: .5em;
+    text-decoration: none;
+    font-size: .8em;
+    margin: 3% auto 5%;
+    position: relative;
+    z-index: 4;
+}
+
+.linkedin a{
+    color: white;
+    text-decoration: none;
+}
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+/* Style the label to display next to the inputs */
+label {
+padding: 12px 12px 12px 0;
+display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+background-color: #BDF3F0;
+color: black;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+float: right;
+}
+
+/* Style the container */
+.form-container {
+border-radius: 5px;
+padding: 0;
+margin-bottom: 5%;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+float: left;
+width: 25%;
+margin-top: 6px;
+font-weight: bold;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+float: left;
+width: 75%;
+margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 750px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .col-25 label {
+        float: left;
+    }
+
+    .container {
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    .container ul {
+        display: flex;
+    }
+
+    .container ul li {
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    .hide-mobile{
+        display: block;
+    }
+    .hide-desktop {
+        display: none;
+    }
+
+    .menu {
+        z-index: 1;
+    }
+
+    nav ul {
+        position: inherit;
+        width: auto;
+        background: none;
+        height: auto;
+        display: flex;
+        padding-top: 0;
+    }
+
+    nav ul li {
+        float: left;
+        margin-right: 20px;
+    }
+
+    nav ul li a{
+        color: black;
+        background: inherit;
+        text-align: right;
+        padding: .5em .5em;
+    }
+
+    nav ul li a:hover {
+        color: #28A9A1;
+        background: white;
+    }
+
+    nav ul li a:active {
+        color: #28A9A1;
+    }
+    .cta {
+        width: 25%;
+        padding: .8em;
+        font-size: 1.2em;
+        margin: 1% auto 2%;
+    }
+
+    .linkedin a {
+        font-size: 1em;
+    }
+    .linkedin {
+        display: flex;
+        justify-content: center;
+    }
+    .linkedin li {
+        margin: 20px;
+    }
+}

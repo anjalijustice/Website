@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anjali Justice</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="img/logo.png" alt="logo" class="logo">
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="img/menu.svg" alt="menu" class="menu" id="menu">
+                </a>    
+
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="img/exit.svg" alt="exit menu"></li>
+                    <li id="list"><a href="index.html">Home</a></li>
+                    <li id="list"><a href="about.html">About</a></li>
+                    <li id="list"><a href="travel.html">Travel</a></li>
+                    <li id="list"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <h1 class="hide-desktop">Hey, I'm Anjali</h1>
+            <h1 class="hide-mobile">Anjali Justice</h1>
+            <p class="subhead">Software Engineer.UI Designer.Web Developer</p>
+        </section>
+    </div>
+
+    <div class="picture-container">
+        <img src="img/img8.jpg" class="main-img" alt="img">
+    </div>
+
+    <div class="projects-container">
+        <div class="container">
+            <h1>Projects</h1>
+            <ul>
+                <li>
+                    <a href="https://medium.com/@justanj/venmo-group-redesign-cca41b78c4e3?postPublishedType=repub">
+                    <img src="img/venmo.png" alt="project-box" class="project-box">
+                    <p>Venmo UI Redesign</p>
+                    </a>
+                    <blockquote>Payments for groups made easy</blockquote>
+                </li>
+                <li>  
+                    <a href="https://medium.com/@justanj/groupme-ios-app-design-critique-1493932327de?postPublishedType=initial">
+                    <img src="img/goupme.png" alt="project box" class="project-box">
+                    <p>GroupMe Design Critique</p>
+                    </a>
+                    <blockquote>An analysis of GroupMe's iOS app UI</blockquote>
+                </li>
+                <li>
+                    <a href="https://www.discoverbreathe.com/">
+                    <img src="img/breathe5.jpg" alt="project box" class="project-box">
+                    <p>A New App for Breathe Fest</p>
+                    </a>
+                    <blockquote>Work in Progress</blockquote>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="contact.html" class="cta">Contact Me</a>
+                <hr>
+                <ul class="linkedin">
+                    <li><a href="https://www.linkedin.com/in/anjalijustice">linkedin.com/in/anjalijustice</a></li>
+                    <li><a href="https://www.gmail.com">justanj@umich.edu</a></li>
+                    <li><a href="AnjaliResume2019.pdf">View my Resume</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+        var list = document.getElementById('list');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+       
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+        list.addEventListener('click', function(e){
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        })
+
+    </script>
+</html>
