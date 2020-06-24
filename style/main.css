@@ -213,8 +213,7 @@ footer {
     }  
     .picture-container {
         overflow: hidden;
-        height: 44em;
-
+        height: 42em;
     }
     .picture-container .main-img {
         width: 90%;
