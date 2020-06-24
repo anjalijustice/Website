@@ -12,31 +12,25 @@ ul {
 h1 {
     font-family: 'Montserrat', 'sans-serif';
 }
-.exit-btn {
-    text-align: right;
-    margin: 0 5% 2% 0;
-    padding: 6% 12%;  
-}
 nav ul {
     position: absolute;
-    width: 30%;
-    top: 2%;
+    width: 100%;
     right: 0;
-    text-align: left;
-    background: rgb(36,41,44);
+    text-align: center;
+    background: white;
     height: auto;
     z-index: 7;
 }
 nav ul li a {
-    color: white;
+    color: rgb(36,41,44);
     text-decoration: none;
     display: block;
     width: 100%;
     padding: 1em 2em;
-    background-color: rgb(52,59,63);
+    background-color: white;
 }
 nav ul li a:hover {
-    background-color: rgb(65,73,78)
+    color: grey;
 }
 .container {
     text-align: center;
@@ -47,8 +41,8 @@ nav ul li a:hover {
     margin-left: 15%;
 }
 .logo {
-    width: 110px;
-    height: 80px;
+    width: 80px;
+    height: 50px;
 }
 .hide-mobile {
     display: none;
@@ -70,18 +64,21 @@ section h1 {
 footer {
     background: #5D5D5D;
     color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 .footer-icon {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 .footer-list {
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 .footer-list li {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     padding: 0;
 }
 
@@ -146,36 +143,33 @@ clear: both;
         width: 100%;
         margin-top: 0;
     }
-
     .col-25 label {
         float: left;
     }
-
     .container {
         width: 90%;
         margin-left: 5%;
-    }
-    
+    } 
     .container ul {
         display: flex;
     }
-
     .form-container ul li {
         justify-content: space-between;
         width: 50%;
     }
-
     .hide-mobile{
         display: block;
     }
     .hide-desktop {
         display: none;
     }
-
     .menu {
         z-index: 1;
     }
-
+    .logo {
+        width: 110px;
+        height: 80px;
+    }
     nav ul {
         position: inherit;
         width: auto;
@@ -184,25 +178,28 @@ clear: both;
         display: flex;
         padding-top: 0;
     }
-
     nav ul li {
         float: left;
         margin-right: 20px;
     }
-
     nav ul li a{
         color: black;
         background: inherit;
         text-align: right;
         padding: .5em .5em;
     }
-
     nav ul li a:hover {
         color: #28A9A1;
         background: white;
     }
-
     nav ul li a:active {
         color: #28A9A1;
+    }
+    footer {
+        background: #5D5D5D;
+        color: white;
+        position: relative;
+        width: 100%;
+        bottom: 0;
     }
 }

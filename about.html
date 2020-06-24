@@ -13,11 +13,10 @@
             <img src="img/planeLogo.png" alt="logo" class="logo">
             <nav>
                 <a href="#" class="hide-desktop">
-                    <img src="img/menu.svg" alt="menu" class="menu" id="menu">
+                    <img src="img/menu.png" alt="menu" class="menu" id="menu">
                 </a>    
 
                 <ul class="show-desktop hide-mobile" id="nav">
-                    <li id="exit" class="exit-btn hide-desktop"><img src="img/exit.svg" alt="exit menu"></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="blog.html">Blog</a></li>
@@ -87,15 +86,9 @@
 <script>
         var menu = document.getElementById('menu');
         var nav = document.getElementById('nav');
-        var exit = document.getElementById('exit');
 
         menu.addEventListener('click', function(e) {
             nav.classList.toggle('hide-mobile');
-            e.preventDefault();
-        });
-       
-        exit.addEventListener('click', function(e) {
-            nav.classList.add('hide-mobile');
             e.preventDefault();
         });
 
