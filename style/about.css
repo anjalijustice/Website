@@ -60,8 +60,8 @@ nav ul li a:hover {
 }
 
 .logo {
-    width: 80px;
-    height: 50px;
+    width: 110px;
+    height: 80px;
 }
 
 .hide-mobile {
@@ -118,40 +118,23 @@ header {
     margin: 0 0 10px;
     font-size: .9em; 
 }
-
-footer , footer a{
+footer {
     background: #5D5D5D;
     color: white;
-    text-decoration: none;
-    font-size: .9em;
+    width: 100%;
+    bottom: 0;
 }
-
-footer li {
-    margin: 2.5px;
-
+.footer-icon {
+    width: 40px;
+    height: 40px;
 }
-footer hr {
-    border-color: #BDF3F0;
-    margin-bottom: 4%;
+.footer-list {
+    display: flex;
+    justify-content: center;
 }
-
-.cta {
-    color: black;
-    background: #BDF3F0;
-    width: calc(50% - 5em);
-    display: block;
-    border-radius: 20px;
-    padding: .5em;
-    text-decoration: none;
-    font-size: .8em;
-    margin: 3% auto 5%;
-    position: relative;
-    z-index: 4;
-}
-
-.linkedin a{
-    color: white;
-    text-decoration: none;
+.footer-list li {
+    margin: 10px;
+    margin-bottom: 0;
 }
 
 @media only screen and (min-width: 1024px){
@@ -161,11 +144,9 @@ footer hr {
     .hide-desktop {
         display: none;
     }
-
     .menu {
         z-index: 4;
     }
-
     .container h1 {
         padding: 3% 0 0;
     }
@@ -177,38 +158,32 @@ footer hr {
         display: flex;
         padding-top: 0;
     }
-
     nav ul li {
         float: left;
         margin-right: 20px;
     }
-
     nav ul li a{
         color: black;
         background: inherit;
         text-align: right;
         padding: .5em .5em;
     }
-
     nav ul li a:hover {
         color: #28A9A1;
         background: white;
     }
-
     nav ul li a:active {
         color: #28A9A1;
     }
     .container {
-        width: 86%;
-        margin-left: 7%;
-        padding-top: 0;
+        width: 90%;
+        margin-left: 5%;
     }
     .about-container{
         position: relative;
         margin-top: 0;
         margin-bottom: 2%;
     }
-
     .about-container h1 {
         margin: 0;
         text-align: left;
@@ -234,24 +209,6 @@ footer hr {
         margin-right: auto;
         width: 70%;
         left: 12%;
-    }
-    
-    .cta {
-        width: 25%;
-        padding: .8em;
-        font-size: 1.2em;
-        margin-bottom: 5%;
-    }
-
-    .linkedin a {
-        font-size: 1em;
-    }
-    .linkedin {
-        display: flex;
-        justify-content: center;
-    }
-    .linkedin li {
-        margin: 20px;
     }
 }
 

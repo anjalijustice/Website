@@ -5,11 +5,8 @@
 body {
     margin: 0;
     font-family: 'Montserrat', 'sans-serif';
-}
-
-p, blockquote {
-    font-size: .9em;
-    line-height: 1.6em;
+    position: relative;
+    min-height: 100vh;
 }
 
 ul {
@@ -59,8 +56,10 @@ nav ul li a:hover {
 }
 
 .logo {
-    width: 80px;
-    height: 50px;
+    width: 110px;
+    height: 80px;
+    z-index: 2;
+    margin: 0;
 }
 
 .hide-mobile {
@@ -88,10 +87,12 @@ section h1 {
     margin: 0;
     font-size: 1em;
 }
-
+.content {
+    padding-bottom: 3rem;
+}
 .project-box {
     box-shadow: 10px 10px 5px grey;
-    height: 13em;
+    height: 15em;
     margin-bottom: 2%;
 }
 
@@ -127,44 +128,25 @@ section h1 {
     width: 80%;
     margin-left: 10%;
 }
-
 footer {
     background: #5D5D5D;
     color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
-
-footer hr {
-    border-color: #BDF3F0;
-}
-
-.cta {
-    color: black;
-    background: #BDF3F0;
-    width: calc(50% - 5em);
-    display: block;
-    border-radius: 20px;
-    padding: .5em;
-    text-decoration: none;
-    font-size: .8em;
-    margin: 3% auto 5%;
-    position: relative;
-    z-index: 4;
-}
-
-.linkedin a{
-    color: white;
-    text-decoration: none;
+.footer-icon {
+    width: 40px;
+    height: 40px;
 }
 
 @media only screen and (min-width: 760px){
     section h1 {
         font-size: 1.9em;
     }
-
     .subhead {
         font-size: 1.4em;
-    }
-    
+    }  
     .projects-container h1 {
         margin-bottom: 50px;
         font-size: 2.5em;
@@ -174,11 +156,9 @@ footer hr {
         flex-wrap: wrap;
         align-items: center;
     }
-
     .projects-container ul li {
         width: 33.33%;
     }
-    
     .projects-container ul li p {
         font-size: 1.2em;
     }
@@ -196,11 +176,9 @@ footer hr {
     .hide-desktop {
         display: none;
     }
-
     .menu {
         z-index: 1;
     }
-
     nav ul {
         position: inherit;
         width: auto;
@@ -209,33 +187,27 @@ footer hr {
         display: flex;
         padding-top: 0;
     }
-
     nav ul li {
         float: left;
         margin-right: 20px;
     }
-
     nav ul li a{
         color: black;
         background: inherit;
         text-align: right;
         padding: .5em .5em;
     }
-
     nav ul li a:hover {
         color: #28A9A1;
         background: white;
     }
-
     nav ul li a:active {
         color: #28A9A1;
     }
-
     .container {
         width: 90%;
         margin-left: 5%;
-    }
-    
+    }  
     .picture-container {
         overflow: hidden;
         height: 44em;
@@ -245,7 +217,6 @@ footer hr {
         width: 90%;
         margin-left: 5%;
     }
-
     section {
         position: absolute;
         width: 50%;
@@ -253,18 +224,12 @@ footer hr {
         text-align: left;
         margin-left: 2%;
     }
-
     section h1 {
         font-size: 3em;
     }
-   
     .subhead {
         font-size: 1.2em;
         font-weight: bold;
-    }
-
-    .projects-container h1 {
-        margin: 3%;
     }
     .projects-container ul li p {
         padding-top: 2%;
@@ -273,22 +238,13 @@ footer hr {
     .projects-container ul li blockquote{
         font-size: 1em;
     }
-    
-    .cta {
-        width: 25%;
-        padding: .8em;
-        font-size: 1.2em;
-        margin: 1% auto 2%;
-    }
-
-    .linkedin a {
-        font-size: 1em;
-    }
-    .linkedin {
+    .footer-list {
         display: flex;
         justify-content: center;
     }
-    .linkedin li {
-        margin: 20px;
+    .footer-list li {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 0;
     }
 }

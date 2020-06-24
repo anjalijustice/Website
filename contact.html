@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="style/contact.css">
 </head>
 <body>
+    <div class="content">
     <div class="container">
         <header>
-            <img src="img/logo.png" alt="logo" class="logo">
+            <img src="img/planeLogo.png" alt="logo" class="logo">
             <nav>
                 <a href="#" class="hide-desktop">
                     <img src="img/menu.svg" alt="menu" class="menu" id="menu">
@@ -20,7 +21,7 @@
                     <li id="exit" class="exit-btn hide-desktop"><img src="img/exit.svg" alt="exit menu"></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="travel.html">Travel</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -39,7 +40,7 @@
                             <label for="name">Name</label>
                         </div>
                         <div class="col-75">
-                            <input type="text" id="name" name="name" placeholder="Your name..">
+                            <input type="text" id="name" name="name" placeholder="Your name">
                         </div>
                         </div>
                         <div class="row">
@@ -47,7 +48,7 @@
                                 <label for="mail">Email</label>
                             </div>
                             <div class="col-75">
-                                <input type="text" id="mail" name="mail" placeholder="Your email..">
+                                <input type="text" id="mail" name="mail" placeholder="Your email">
                             </div>
                             </div>
                         <div class="row">
@@ -55,12 +56,7 @@
                             <label for="subject">Subject</label>
                         </div>
                         <div class="col-75">
-                            <select id="subject" name="subject">
-                            <option value="Engineering">Engineering</option>
-                            <option value="Aviation">Aviation</option>
-                            <option value="Travel">Travel</option>
-                            <option value="Other">Other</option>
-                            </select>
+                            <input type="text" id="subject" name="subject" placeholder="Subject">
                         </div>
                         </div>
                         <div class="row">
@@ -87,15 +83,15 @@
             </ul>
         </div>
     </div>
+    </div>
     <footer>
-        <div class="footer-container">
-            <div class="container">
-                <ul class="linkedin">
-                    <li><a href="https://www.linkedin.com/in/anjalijustice">linkedin.com/in/anjalijustice</a></li>
-                    <li><a href="https://www.gmail.com">justanj@umich.edu</a></li>
-                    <li><a href="AnjaliResume2019.pdf">View my Resume</a></li>
-                </ul>
-            </div>
+        <div class="container">
+            <ul class="footer-list">
+                <li><a href="https://www.linkedin.com/in/anjalijustice"><img src="img/linkedin.png" class="footer-icon"></a></li>
+                <li><a href="https://www.gmail.com"><img src="img/gmail.png" class="footer-icon"></a></li>
+                <li><a href="https://www.github.com/anjalijustice"><img src="img/github.svg" class="footer-icon"></a></li>
+                <li><a href="AnjaliResume2019.pdf"><img src="img/resume.png" class="footer-icon"></a></li>
+            </ul>
         </div>
     </footer>
 </body>
