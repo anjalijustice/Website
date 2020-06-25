@@ -107,7 +107,8 @@ section h1 {
 }
 .projects-container ul li p{
     font-size: 1em;
-    margin: 0 0 .5em;
+    margin-top: 0;
+    margin-bottom: 10%;
 }
 
 .projects-container ul li blockquote {
