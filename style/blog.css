@@ -26,14 +26,14 @@ nav ul {
     text-align: center;
     background: white;
     height: auto;
-    z-index: 7;
+    z-index: 2;
 }
 nav ul li a {
     color: rgb(36,41,44);
     text-decoration: none;
     display: block;
     width: 100%;
-    padding: 1em 2em;
+    padding: 1em 0;
     background-color: white;
 }
 nav ul li a:hover {
@@ -53,6 +53,7 @@ nav ul li a:hover {
 .logo {
     width: 80px;
     height: 50px;
+    z-index: 3;
 }
 .hide-mobile {
     display: none;
