@@ -10,6 +10,13 @@ ul {
     margin: 0;
     padding: 0;    
 }
+.post-container ul li a{
+    text-decoration: none;
+}
+.post-container ul li a p{
+    color: black;
+    font-size: 1.2em;
+}
 h1 {
     font-family: 'Montserrat', 'sans-serif';
 }
@@ -169,7 +176,7 @@ footer {
     }
     .blog-box {
         box-shadow: 10px 10px 8px grey;
-        height: 13em;
+        height: 15em;
         margin-bottom: 2%;
         background-color: #BDF3F0;
     }
