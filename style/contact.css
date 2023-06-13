@@ -22,42 +22,26 @@ body {
   text-transform: uppercase;
   letter-spacing: 6px;
 }
-.contact-blurb .form-horizontal{
+.contact-blurb {
   width: 90%;
   height: 50vh;
   text-align: center;
-}
-.contact-blurb {
   text-align: center;
   margin: 2em;
 }
-.form-horizontal {
-  font-family: 'Lato';
-  font-weight: 400;
-  height: 60vh;
-}
-.form-control, textarea {
-  width: 100%;
-  margin: auto;
-  margin-bottom: 10px;
-  color: #333;
-  border-color: #333;
-}
 .form-group {
-  width: 90%;
+  width: 80%;
   margin: auto;
 }
 .send-button {
   width: 100%;
   height: 3em;
   margin: auto;
-  background-color: #f2f0eb;
+  background-color: #989f97;
   border-color: #333;
   border-radius: 10px;
-} 
-.send-text {
   font-size: medium;
-}
+} 
 .social-icon {
   display: flex;
   justify-content: center;
@@ -103,41 +87,20 @@ body {
   position: relative;
   max-width: 1200px;
 }
-.contact-blurb .form-horizontal{
-  width: 99%;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  float: none;
-}
-.form-horizontal {
-  width: 50%
-}
-.contact-blurb {
+.contact-blurb{
   width: 50%;
-  text-align: left;
   margin: 0;
   padding: 0;
+  text-align: left;
+  float: none;
 }
 .contact-list {
   list-style-type: none;
   margin-left: -30px;
   padding-right: 20px;
 }
-.form-label {
-  margin-left: 10px;
-}
-.form-control {
-  width: 100%;
-  margin-bottom: 10px;
-}
-.form-control, textarea {
-  width: 100%;
-  color: #333;
-  border-color: #333;
-  margin-left: 10px;
-  padding-left: 2px;
-  font-size: small;
+.form-group {
+  width: 40%;
 }
 .section-header {
   text-align: center;
@@ -153,6 +116,7 @@ body {
   color: #aaa;
 }
 .send-button {
+  background-color: #f2f0eb;
   margin-left: 10px;
   width: 100%;
 }
