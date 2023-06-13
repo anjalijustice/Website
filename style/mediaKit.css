@@ -24,7 +24,7 @@ body {
     display: none;
 }
 .kit-container img{
-    width: 60%;
+    width: 80%;
 }
 @media only screen and (min-width: 1024px){
     .hide-mobile{
@@ -33,4 +33,7 @@ body {
     .hide-desktop {
         display: none;
     }
+    .kit-container img{
+    width: 60%;
+}
 }
