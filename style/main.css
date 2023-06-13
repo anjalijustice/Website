@@ -8,134 +8,64 @@ body {
     position: relative;
     min-height: 100vh;
 }
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;    
-}
 h1 {
     font-family: 'Montserrat', 'sans-serif';
 }
-nav ul {
-    position: absolute;
-    width: 100%;
-    right: 0;
-    text-align: center;
-    background: white;
-    height: auto;
-    z-index: 2;
-}
-nav ul li a {
-    color: rgb(36,41,44);
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    padding: 1em 0;
-    background-color: white;
-}
-nav ul li a:hover {
-    color: grey;
-}
-
 .container {
     text-align: center;
     padding: .8em 1.2em;
 }
-
-.logo {
-    width: 80px;
-    height: 50px;
-    z-index: 3;
-    margin: 0;
-}
-
 .hide-mobile {
     display: none;
 }
-
-header {
-    display: flex;
-    justify-content: space-between;
-    height: 40px;
-    z-index: 1;
-}
-
-.menu {
-    width: 25px;
-    margin-top: 50%;
-}
-
-section h1 {
-    font-size: 1.4em;
-    margin: 5% 0 0 0;
-}
-
-.subhead {
-    margin: 0;
-    font-size: 1em;
-}
-.content {
-    padding-bottom: 3rem;
-}
-.project-box {
-    box-shadow: 10px 10px 5px grey;
-    height: 17em;
-    margin-bottom: 2%;
-}
-
 .picture-container img{
     width: 100%;
+    margin-top: -3rem;
+    z-index: 1;
 }
-
-.projects-container h1 {
-    font-size: 1.5em;
+.about-container {
+    margin: 30px;
 }
-.projects-container ul li {
-    margin: 0;
-    color: black;
+.about-container h1 {
+    text-align: center;
 }
-
-.projects-container ul li a{
-    color: black;
-    text-decoration: none;
+.about-text {
+    text-align: center;
 }
-
-.projects-container ul li img {
-    justify-content: center;
-    width: 85%;
+.about-text h3 {
+    padding-top: 2rem;
 }
-.projects-container ul li p{
-    font-size: 1em;
-    margin-top: 0;
-    margin-bottom: 10%;
-}
-
-.projects-container ul li blockquote {
-    font-size: .7em;
-    margin: 0 0 2em;
-    width: 80%;
-    margin-left: 10%;
-}
-footer {
-    background: #5D5D5D;
-    color: white;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
-.footer-icon {
-    width: 30px;
-    height: 30px;
-}
-.footer-list {
-    display: flex;
-    justify-content: left;
-}
-.footer-list li {
-    margin-left: 5px;
-    margin-right: 5px;
+.instagram-container {
+    text-align: center;
+    height: 265px;
     padding: 0;
+    padding-top: 10px;
+}
+.instagram-container h2 {
+    z-index: 3;
+}
+.instagram-container iframe{
+    position: relative;
+    top: -40px;
+    z-index: 1;
+}
+.collab-container {
+    text-align: center;
+    background-color: #f2f0eb;
+    padding: 10px 0;
+}
+.collab-button {
+    width: 10rem;
+    height: 2rem;
+    margin: 5px 0;
+    background-color: #989f97;
+    font-size: medium;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.collab-button a {
+    text-decoration: none;
+    color: white;
 }
 
 @media only screen and (min-width: 760px){
@@ -145,22 +75,22 @@ footer {
     .subhead {
         font-size: 1.4em;
     }  
-    .projects-container h1 {
+    .about-container h1 {
         margin-bottom: 50px;
         font-size: 2.5em;
     }
-    .projects-container ul {
+    .about-container ul {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
     }
-    .projects-container ul li {
+    .about-container ul li {
         width: 33.33%;
     }
-    .projects-container ul li p {
+    .about-container ul li p {
         font-size: 1.2em;
     }
-    .projects-container ul li blockquote {
+    .about-container ul li blockquote {
         width: 80%;
         margin-left: 10%;
         font-size: 1em;
@@ -174,84 +104,45 @@ footer {
     .hide-desktop {
         display: none;
     }
-    .menu {
-        z-index: 1;
-    }
-    .logo {
-        width: 110px;
-        height: 80px;
-        z-index: 2;
-        margin: 0;
-    }
-    nav ul {
-        position: inherit;
-        width: auto;
-        background: none;
-        height: auto;
-        display: flex;
-        padding-top: 0;
-    }
-    nav ul li {
-        float: left;
-        margin-right: 20px;
-    }
-    nav ul li a{
-        color: black;
-        background: inherit;
-        text-align: right;
-        padding: .5em .5em;
-    }
-    nav ul li a:hover {
-        color: #28A9A1;
-        background: white;
-    }
-    nav ul li a:active {
-        color: #28A9A1;
-    }
-    .container {
-        width: 90%;
-        margin-left: 5%;
-    }  
     .picture-container {
-        overflow: hidden;
-        height: 42em;
+        padding-top: 80px;
     }
     .picture-container .main-img {
-        width: 90%;
-        margin-left: 5%;
+        width: 100%;
     }
-    section {
-        position: absolute;
-        width: 50%;
-        padding-top: 5%;
-        text-align: left;
-        margin-left: 2%;
-    }
-    section h1 {
-        font-size: 3em;
-    }
-    .subhead {
-        font-size: 1.2em;
-        font-weight: bold;
-    }
-    .projects-container ul li p {
-        padding-top: 2%;
-        font-size: 1.2em;
-    }
-    .projects-container ul li blockquote{
-        font-size: 1em;
-    }
-    .footer-icon {
-        width: 40px;
-        height: 40px;
-    }
-    .footer-list {
+    .about-section {
         display: flex;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 100%;
     }
-    .footer-list li {
-        margin-left: 10px;
-        margin-right: 10px;
+    .about-text {
+        margin-left: 50px;
+        width: 600px;
+    }
+    .about-img img{
+        width: 500px;
+        height: 500px;
+        margin-right: 50px;
+        object-fit: cover;
+    }
+    .instagram-container {
         padding: 0;
+        padding-top: 10px;
+    }
+    .instagram-container iframe{
+        position: relative;
+        top: -40px;
+    }
+    .collab-container {
+        padding: 10px 0;
+    }
+    .collab-blurb {
+        margin: 50px;
+        margin-bottom: 20px;
+    }
+    .collab-button {
+        width: 12rem;
+        height: 3rem;
     }
 }

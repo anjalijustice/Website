@@ -5,110 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Me</title>
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/contact.css">
 </head>
 <body>
-    <div class="content">
     <div class="container">
         <header>
-            <img src="img/planeLogo.png" alt="logo" class="logo">
+            <label class="hide-desktop hamburger-menu">
+                <input type="checkbox">
+            </label> 
+            <aside class="sidebar hide-desktop">
+                <nav>
+                    <div><a href="index.html">Home</a></div>
+                    <div><a href="blog.html">Blog</a></div>
+                    <div><a href="mediakit.html">Media Kit</a></div>
+                    <div><a href="contact.html">Contact</a></div>
+                </nav>
+            </aside>
             <nav>
-                <a href="#" class="hide-desktop">
-                    <img src="img/menu.png" alt="menu" class="menu" id="menu">
-                </a>    
-
-                <ul class="show-desktop hide-mobile" id="nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                <ul class="hide-mobile" id="nav">
+                    <li id="list"><a href="index.html">Home</a></li>
+                    <li id="list"><a href="blog.html">Blog</a></li>
+                    <li id="list"><a href="mediakit.html">Media Kit</a></li>
+                    <li id="list"><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-        </header> 
-        <h1>Contact Me</h1>
+        </header>
     </div>
-    <div class="container">
-        <div class="form-container">
-            <ul>
-                <li>
-                    <form action="https://formspree.io/anjalijustice@gmail.com" method="POST">
-                        <div class="row">
-                        <div class="col-25">
-                            <label for="name">Name</label>
-                        </div>
-                        <div class="col-75">
-                            <input type="text" id="name" name="name" placeholder="Your name">
-                        </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-25">
-                                <label for="mail">Email</label>
-                            </div>
-                            <div class="col-75">
-                                <input type="text" id="mail" name="mail" placeholder="Your email">
-                            </div>
-                            </div>
-                        <div class="row">
-                        <div class="col-25">
-                            <label for="subject">Subject</label>
-                        </div>
-                        <div class="col-75">
-                            <input type="text" id="subject" name="subject" placeholder="Subject">
-                        </div>
-                        </div>
-                        <div class="row">
-                        <div class="col-25">
-                            <label for="message">Message</label>
-                        </div>
-                        <div class="col-75">
-                            <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-                        </div>
-                        </div>
-                        <div class="row">
-                        <input type="submit" value="Submit">
-                        </div>
-                    </form>
-                </li>
-                <li>
-                    <div class="contact-info hide-mobile">
-                        <h1>Anjali Justice</h1>
-                        <p>Email: anjalijustice@gmail.com</p>
-                        <p>Phone: 810 280 9190</p>
-                        <p>Social: @anjalijustice</p>
-                    </div>
-                </li>
-            </ul>
+    <section id="contact">
+        <h1 class="section-header">Contact</h1> 
+        <div class="contact-wrapper">  
+            <div class="contact-blurb">
+                <h1>Send me a message!</h1>
+                <br>
+                <p>
+                    If you have questions, want to chat, or are inquiring about a brand collaboration I would love to hear from you! Send me a message using this form and I'll email you back shortly.
+                    <br>
+                    <br>
+                    Looking to collab? Please provide as much information as possible so I can serve you best.
+                    <br>
+                    <br>
+                    You can also connect with me on social media!
+                </p>
+                <ul class="social-icon">
+                    <li class="social-icon__item"><a class="social-icon__link" style="color: #E1306C" href="https://instagram.com/anjalijustice">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                        </a></li>
+                    <li class="social-icon__item"><a class="social-icon__link" style="color: #FF0000" href="https://youtube.com/@anjalijustice">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                        </a></li>
+                    <li class="social-icon__item"><a class="social-icon__link" style="color: #E60023" href="https://pinterest.com/anjalijustice">
+                        <ion-icon name="logo-pinterest"></ion-icon>
+                        </a></li>
+                    <li class="social-icon__item"><a class="social-icon__link" style="color: #4267B2" href="https://facebook.com/anjalijusticevanlife">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        </a></li>
+                </ul>
+            </div>
+            <form action="https://formspree.io/anjalijustice@gmail.com" method="POST" id="contact-form" class="form-horizontal" role="form">
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <span class="form-label">Name</span>
+                    <br>
+                    <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <span class="form-label">Email</span>
+                    <br>
+                    <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                    <span class="form-label">Message</span>
+                    <br>
+                    <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+                    <button class="send-button" id="submit" type="submit">
+                        <span class="send-text">SEND</span>
+                    </button>
+                </div>
+                
+            </form>
         </div>
-    </div>
-    </div>
-    <footer>
-        <div class="container">
-            <ul class="footer-list">
-                <li><a href="https://www.linkedin.com/in/anjalijustice"><img src="img/linkedin.png" class="footer-icon"></a></li>
-                <li><a href="contact.html"><img src="img/gmail.png" class="footer-icon"></a></li>
-                <li><a href="https://www.github.com/anjalijustice"><img src="img/github.svg" class="footer-icon"></a></li>
-                <li><a href="AnjaliJusticeResume2021.pdf"><img src="img/resume.png" class="footer-icon"></a></li>
-            </ul>
-        </div>
-    </footer>
-</body>
-<script>
-    var menu = document.getElementById('menu');
-    var nav = document.getElementById('nav');
-    var exit = document.getElementById('exit');
-    var list = document.getElementById('list');
-
-    menu.addEventListener('click', function(e) {
-        nav.classList.toggle('hide-mobile');
-        e.preventDefault();
-    });
+        
+      </section>  
+    <footer class="footer">
+        <ul class="footer-social-icon">
+            <li class="footer-social-icon__item"><a class="footer-social-icon__link" href="https://instagram.com/anjalijustice">
+                <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+            <li class="footer-social-icon__item"><a class="footer-social-icon__link" href="https://youtube.com/@anjalijustice">
+                <ion-icon name="logo-youtube"></ion-icon>
+                </a></li>
+            <li class="footer-social-icon__item"><a class="footer-social-icon__link" href="https://pinterest.com/anjalijustice">
+                <ion-icon name="logo-pinterest"></ion-icon>
+                </a></li>
+            <li class="footer-social-icon__item"><a class="footer-social-icon__link" href="https://facebook.com/anjalijusticevanlife">
+                <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+        </ul>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="/index.html">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="/blog.html">Blog</a></li>
+          <li class="menu__item"><a class="menu__link" href="/mediaKit.html">Media Kit</a></li>
+          <li class="menu__item"><a class="menu__link" href="/contact.html">Contact</a></li>
     
-    exit.addEventListener('click', function(e) {
-        nav.classList.add('hide-mobile');
-        e.preventDefault();
+        </ul>
+        <p>2023 Anjali Justice | All Rights Reserved</p>
+      </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+    
+    document.querySelector('#contact-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                e.target.elements.name.value = '';
+                e.target.elements.email.value = '';
+                e.target.elements.message.value = '';
     });
-    // hello
-
-</script> 
+    </script> 
+</body>
 </html>

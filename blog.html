@@ -4,24 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blog</title>
     <link rel="stylesheet" href="style/blog.css">
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/footer.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="img/planeLogo.png" alt="logo" class="logo">
+            <label class="hide-desktop hamburger-menu">
+                <input type="checkbox">
+            </label> 
+            <aside class="sidebar hide-desktop">
+                <nav>
+                    <div><a href="index.html">Home</a></div>
+                    <div><a href="blog.html">Blog</a></div>
+                    <div><a href="mediakit.html">Media Kit</a></div>
+                    <div><a href="contact.html">Contact</a></div>
+                </nav>
+            </aside>
             <nav>
-                <a href="#" class="hide-desktop">
-                    <img src="img/menu.png" alt="menu" class="menu" id="menu">
-                </a>    
-
-                <ul class="show-desktop hide-mobile" id="nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                <ul class="hide-mobile" id="nav">
+                    <li id="list"><a href="index.html">Home</a></li>
+                    <li id="list"><a href="blog.html">Blog</a></li>
+                    <li id="list"><a href="mediakit.html">Media Kit</a></li>
+                    <li id="list"><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -31,63 +37,57 @@
     <!-- Map of locations Ive been to -->
     <!-- <iframe src="https://www.google.co.uk/maps/d/u/0/embed?mid=1_zeEKeJ6UQJdAFBDzntvAjwsBpFc1VVx" class="map"></iframe> -->
     <div class="post-container">
-        <div class="container">
-            <ul>
-                <li>
-                    <a href="https://medium.com/@anjalijustice/building-a-home-8625757dba7">
-                    <img src="img/building-a-home.jpeg" alt="blog-box" class="blog-box">
-                    <p>Building a Home</p>
-                    </a>
-                </li>
-                 <li>
-                    <a href="https://medium.com/@anjalijustice/down-and-dirty-an-in-depth-look-at-my-van-build-728dedc56f2e">
-                    <img src="img/down-and-dirty.jpeg" alt="blog-box" class="blog-box">
-                    <p>Down and Dirty: The details of my van build </p>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://anjalijustice.medium.com/life-on-the-road-first-impressions-90d876066a04">
-                    <img src="img/life-on-the-road.jpeg" alt="blog-box" class="blog-box">
-                    <p>Life on the Road</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://anjalijustice.medium.com/precious-cargo-63862b02585e">
-                    <img src="img/precious_cargo.jpeg" alt="blog-box" class="blog-box">
-                    <p>Precious Cargo: Vanlife with Theo</p>
-                    </a>
-                </li>
-            </ul>
+        <div class="blog-post">
+            <a href="https://medium.com/@anjalijustice/building-a-home-8625757dba7">
+                <img src="img/building-a-home.jpg" alt="blog-box">
+                <p>Building a Home</p>
+            </a>
+        </div>
+        <div class="blog-post">
+            <a href="https://medium.com/@anjalijustice/down-and-dirty-an-in-depth-look-at-my-van-build-728dedc56f2e">
+                <img src="img/down-and-dirty.jpg" alt="blog-box">
+                <p>Down and Dirty: The details of my van build</p>
+            </a>
+        </div>
+        <div class="blog-post">
+            <a href="https://anjalijustice.medium.com/life-on-the-road-first-impressions-90d876066a04">
+                <img src="img/life-on-the-road.jpg" alt="blog-box">
+                <p>Life on the Road</p>
+            </a>
+        </div>
+        <div class="blog-post">
+            <a href="https://anjalijustice.medium.com/precious-cargo-63862b02585e">
+                <img src="img/precious_cargo.jpg" alt="blog-box">
+                <p>Precious Cargo: Vanlife with Theo</p>
+            </a>
         </div>
     </div>
 
-    <footer>
-        <div class="container">
-            <ul class="footer-list">
-                <li><a href="https://www.linkedin.com/in/anjalijustice"><img src="img/linkedin.png" class="footer-icon"></a></li>
-                <li><a href="contact.html"><img src="img/gmail.png" class="footer-icon"></a></li>
-                <li><a href="https://www.github.com/anjalijustice"><img src="img/github.svg" class="footer-icon"></a></li>
-                <li><a href="AnjaliJusticeResume2021.pdf"><img src="img/resume.png" class="footer-icon"></a></li>
-            </ul>
-        </div>
-    </footer>
-</body>
-<script>
-    var menu = document.getElementById('menu');
-    var nav = document.getElementById('nav');
-    var exit = document.getElementById('exit');
-    var list = document.getElementById('list');
-
-    menu.addEventListener('click', function(e) {
-        nav.classList.toggle('hide-mobile');
-        e.preventDefault();
-    });
+    <footer class="footer">
+        <ul class="footer-social-icon">
+            <li class="footer-social-icon__item"><a class="footer-social-icon__link" href="https://instagram.com/anjalijustice">
+                <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+            <li class="footer-social-icon__item"><a class="footer-social-icon__link" href="https://youtube.com/@anjalijustice">
+                <ion-icon name="logo-youtube"></ion-icon>
+                </a></li>
+            <li class="footer-social-icon__item"><a class="footer-social-icon__link" href="https://pinterest.com/anjalijustice">
+                <ion-icon name="logo-pinterest"></ion-icon>
+                </a></li>
+            <li class="footer-social-icon__item"><a class="footer-social-icon__link" href="https://facebook.com/anjalijusticevanlife">
+                <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+        </ul>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="/index.html">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="/blog.html">Blog</a></li>
+          <li class="menu__item"><a class="menu__link" href="/mediaKit.html">Media Kit</a></li>
+          <li class="menu__item"><a class="menu__link" href="/contact.html">Contact</a></li>
     
-    exit.addEventListener('click', function(e) {
-        nav.classList.add('hide-mobile');
-        e.preventDefault();
-    });
-    // hello
-
-</script> 
+        </ul>
+        <p>2023 Anjali Justice | All Rights Reserved</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
 </html>

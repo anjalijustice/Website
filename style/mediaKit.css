@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', 'sans-serif';
+}
+.container {
+    text-align: center;
+    padding: 0;
+    width: 100%;
+}
+.hide-mobile {
+    display: none;
+}
+.kit-container img{
+    width: 60%;
+}
+@media only screen and (min-width: 1024px){
+    .hide-mobile{
+        display: block;
+    }
+    .hide-desktop {
+        display: none;
+    }
+}

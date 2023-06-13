@@ -1,222 +1,162 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
-
 body {
-    margin: 0;
-    font-family: 'Montserrat', 'sans-serif';
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;    
-}
-h1 {
-    font-family: 'Montserrat', 'sans-serif';
-}
-nav ul {
-    position: absolute;
-    width: 100%;
-    right: 0;
-    text-align: center;
-    background: white;
-    height: auto;
-    z-index: 2;
-}
-nav ul li a {
-    color: rgb(36,41,44);
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    padding: 1em 0;
-    background-color: white;
-}
-nav ul li a:hover {
-    color: grey;
-}
-.container {
-    text-align: center;
-    padding: .8em 1.2em;
-    width: 90%;
-}
-.container h1{
-    margin: 0;
-    padding-top: 3%;
-    padding-bottom: 0;
-    font-family: 'Montserrat', 'sans-serif';
-    font-size: 2.2em;
-}
-.contact-info {
-    text-align: left;
-    margin-left: 15%;
-}
-.logo {
-    width: 80px;
-    height: 50px;
-    z-index: 3;
+  margin: 0;
+  padding: 0;
+  background-color: white;
 }
 .hide-mobile {
-    display: none;
+  display: none;
 }
-header {
-    display: flex;
-    justify-content: space-between;
-    height: 40px;
-    z-index: 1;
+.contact-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
-.menu {
-    width: 25px;
-    margin-top: 50%;
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px 0;
+  font: 300 30px 'Oswald', sans-serif;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 6px;
 }
-footer {
-    background: #5D5D5D;
+.contact-blurb .form-horizontal{
+  width: 90%;
+  height: 50vh;
+  text-align: center;
+}
+.contact-blurb {
+  text-align: center;
+  margin: 2em;
+}
+.form-horizontal {
+  font-family: 'Lato';
+  font-weight: 400;
+  height: 60vh;
+}
+.form-control, textarea {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 10px;
+  color: #333;
+  border-color: #333;
+}
+.form-group {
+  width: 90%;
+  margin: auto;
+}
+.send-button {
+  width: 100%;
+  height: 3em;
+  margin: auto;
+  background-color: #f2f0eb;
+  border-color: #333;
+  border-radius: 10px;
+} 
+.send-text {
+  font-size: medium;
+}
+.social-icon {
+  display: flex;
+  justify-content: center;
+  margin: 2px 0;
+}
+.social-icon__item {
+  list-style: none;
+}
+.social-icon__link {
+  font-size: 2.5rem;
+  margin: 0 10px;
+  margin-left: 0;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+/* Tablet size */
+@media only screen and (min-width: 760px){
+  .send-button:hover{
+    background-color: #989f97;
     color: white;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
-.footer-icon {
-    width: 30px;
-    height: 30px;
-}
-.footer-list {
-    display: flex;
-    justify-content: left;
-}
-.footer-list li {
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 0;
-}
-input[type=text], select, textarea{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
+    transition: background-color 200ms ease-in-out;
+    cursor: pointer;
   }
-  
-/* Style the label to display next to the inputs */
-label {
-padding: 12px 12px 12px 0;
-display: inline-block;
 }
 
-/* Style the submit button */
-input[type=submit] {
-background-color: #BDF3F0;
-color: black;
-padding: 12px 20px;
-border: none;
-border-radius: 4px;
-cursor: pointer;
-float: right;
+/* Laptop size */
+@media only screen and (min-width: 1024px){
+.hide-mobile {
+   display: block;
 }
-
-/* Style the container */
-.form-container {
-border-radius: 5px;
-padding: 0;
-margin-bottom: 5%;
+.hide-desktop {
+   display: none;
 }
-
-/* Floating column for labels: 25% width */
-.col-25 {
-float: left;
-width: 25%;
-margin-top: 6px;
-font-weight: bold;
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  max-width: 1200px;
 }
-
-/* Floating column for inputs: 75% width */
-.col-75 {
-float: left;
-width: 75%;
-margin-top: 6px;
+.contact-blurb .form-horizontal{
+  width: 99%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  float: none;
 }
-
-/* Clear floats after the columns */
-.row:after {
-content: "";
-display: table;
-clear: both;
+.form-horizontal {
+  width: 50%
 }
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (min-width: 750px) {
-    .col-25, .col-75, input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    }
-    .col-25 label {
-        float: left;
-    }
-    .container {
-        width: 90%;
-        margin-left: 5%;
-    } 
-    .container ul {
-        display: flex;
-    }
-    .form-container ul li {
-        justify-content: space-between;
-        width: 50%;
-    }
-    .hide-mobile{
-        display: block;
-    }
-    .hide-desktop {
-        display: none;
-    }
-    .menu {
-        z-index: 1;
-    }
-    .logo {
-        width: 110px;
-        height: 80px;
-    }
-    nav ul {
-        position: inherit;
-        width: auto;
-        background: none;
-        height: auto;
-        display: flex;
-        padding-top: 0;
-    }
-    nav ul li {
-        float: left;
-        margin-right: 20px;
-    }
-    nav ul li a{
-        color: black;
-        background: inherit;
-        text-align: right;
-        padding: .5em .5em;
-    }
-    nav ul li a:hover {
-        color: #28A9A1;
-        background: white;
-    }
-    nav ul li a:active {
-        color: #28A9A1;
-    }
-    footer {
-        background: #5D5D5D;
-        color: white;
-        position: relative;
-        width: 100%;
-        bottom: 0;
-    }
-    .footer-icon {
-        width: 40px;
-        height: 40px;
-    }
-    .footer-list {
-        display: flex;
-        justify-content: center;
-    }
-    .footer-list li {
-        margin-left: 10px;
-        margin-right: 10px;
-        padding: 0;
-    }
+.contact-blurb {
+  width: 50%;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+}
+.form-label {
+  margin-left: 10px;
+}
+.form-control {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.form-control, textarea {
+  width: 100%;
+  color: #333;
+  border-color: #333;
+  margin-left: 10px;
+  padding-left: 2px;
+  font-size: small;
+}
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  font: 300 60px 'Oswald', sans-serif;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+.list-item {
+  line-height: 4;
+  color: #aaa;
+}
+.send-button {
+  margin-left: 10px;
+  width: 100%;
+}
+.social-icon {
+  justify-content: left;
+}
 }
