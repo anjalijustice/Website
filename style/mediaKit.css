@@ -11,6 +11,15 @@ body {
     padding: 0;
     width: 100%;
 }
+.section-header {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0;
+    font: 300 30px 'Oswald', sans-serif;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+  }
 .hide-mobile {
     display: none;
 }

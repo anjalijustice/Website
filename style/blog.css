@@ -5,9 +5,15 @@ body {
     margin: 0;
     font-family: 'Montserrat', 'sans-serif';
 }
-.container h1 {
-    margin: 10px;
-}
+.section-header {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0;
+    font: 300 30px 'Oswald', sans-serif;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+  }
 .post-container {
     text-align: center;
     width: 90%;
