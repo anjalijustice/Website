@@ -9,6 +9,7 @@
 
 .footer {
   position: relative;
+  bottom: 0;
   width: 100%;
   background: #f2f0eb;
   min-height: 100px;
