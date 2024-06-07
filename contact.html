@@ -66,25 +66,7 @@
                 </ul>
             </div>
             <div class="form-group">
-                <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-                    <div class="row">
-                      <label class="required" for="name">Name:</label><br />
-                      <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-                      <span id="name_validation" class="error_message"></span>
-                    </div>
-                    <div class="row">
-                      <label class="required" for="email">Email Address:</label><br />
-                      <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-                      <span id="email_validation" class="error_message"></span>
-                    </div>
-                    <div class="row">
-                      <label class="required" for="message">Message:</label><br />
-                      <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-                      <span id="message_validation" class="error_message"></span>
-                    </div>
-                      
-                      <input id="submit_button" type="submit" value="Submit" />
-                  </form>
+                <script type="text/javascript" src="https://form.jotform.com/jsform/241585151937159"></script>
             </div>
         </div>
         
@@ -115,41 +97,5 @@
       </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <?php
-$action=$_REQUEST['action'];
-if ($action=="") /* display the contact form */
-    {
-    ?>
-    <form action="" method="POST" enctype="multipart/form-data">
-    <input type="hidden" name="action" value="submit">
-    Your name:<br>
-    <input name="name" type="text" value="" size="30"/><br>
-    Your email:<br>
-    <input name="email" type="text" value="" size="30"/><br>
-    Your message:<br>
-    <textarea name="message" rows="7" cols="30"></textarea><br>
-    <input type="submit" value="Send email"/>
-    </form>
-    
-    <?php
-    } 
-else /* send the submitted data */
-    {
-    $name=$_REQUEST['name'];
-    $email=$_REQUEST['email'];
-    $message=$_REQUEST['message'];
-    if (($name=="")||($email=="")||($message==""))
-        {
-        echo "All fields are required, please fill <a href=\"\">the form</a> again.";
-        }
-    else{        
-        $from="From: $name<$email>\r\nReturn-path: $email";
-        $subject=" Message sent using your contact form";
-        mail("info@anjalijustice.com", $subject, $message, $from);
-        echo "Email sent!";
-        }
-    }  
-?>
-
 </body>
 </html>
