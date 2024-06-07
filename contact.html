@@ -66,14 +66,25 @@
                 </ul>
             </div>
             <div class="form-group">
-                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-                <script>
-                hbspt.forms.create({
-                    region: "na1",
-                    portalId: "39988736",
-                    formId: "ca6d219b-752f-4e92-b472-eb047a6831a8"
-                });
-                </script>
+                <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+                    <div class="row">
+                      <label class="required" for="name">Name:</label><br />
+                      <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+                      <span id="name_validation" class="error_message"></span>
+                    </div>
+                    <div class="row">
+                      <label class="required" for="email">Email Address:</label><br />
+                      <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+                      <span id="email_validation" class="error_message"></span>
+                    </div>
+                    <div class="row">
+                      <label class="required" for="message">Message:</label><br />
+                      <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+                      <span id="message_validation" class="error_message"></span>
+                    </div>
+                      
+                      <input id="submit_button" type="submit" value="Submit" />
+                  </form>
             </div>
         </div>
         
@@ -104,14 +115,41 @@
       </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script>
+    <?php
+$action=$_REQUEST['action'];
+if ($action=="") /* display the contact form */
+    {
+    ?>
+    <form action="" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="action" value="submit">
+    Your name:<br>
+    <input name="name" type="text" value="" size="30"/><br>
+    Your email:<br>
+    <input name="email" type="text" value="" size="30"/><br>
+    Your message:<br>
+    <textarea name="message" rows="7" cols="30"></textarea><br>
+    <input type="submit" value="Send email"/>
+    </form>
     
-    document.querySelector('#contact-form').addEventListener('submit', (e) => {
-                e.preventDefault();
-                e.target.elements.name.value = '';
-                e.target.elements.email.value = '';
-                e.target.elements.message.value = '';
-    });
-    </script> 
+    <?php
+    } 
+else /* send the submitted data */
+    {
+    $name=$_REQUEST['name'];
+    $email=$_REQUEST['email'];
+    $message=$_REQUEST['message'];
+    if (($name=="")||($email=="")||($message==""))
+        {
+        echo "All fields are required, please fill <a href=\"\">the form</a> again.";
+        }
+    else{        
+        $from="From: $name<$email>\r\nReturn-path: $email";
+        $subject=" Message sent using your contact form";
+        mail("info@anjalijustice.com", $subject, $message, $from);
+        echo "Email sent!";
+        }
+    }  
+?>
+
 </body>
 </html>
