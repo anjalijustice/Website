@@ -34,12 +34,14 @@ h1 {
 }
 .about-container {
     margin: 30px;
+    background-color: #f2f0eb;
 }
 .about-container h1 {
     text-align: center;
 }
 .about-text {
     text-align: center;
+    padding: 0 5px;
 }
 .about-text h3 {
     padding-top: 2rem;
@@ -60,8 +62,11 @@ h1 {
 }
 .collab-container {
     text-align: center;
-    background-color: #f2f0eb;
+    background-color: white;
     padding: 10px 0;
+}
+.collab-blurb {
+    padding: 0 5px;
 }
 .collab-button {
     width: 10rem;
@@ -145,10 +150,14 @@ h1 {
     }
     .collab-container {
         padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .collab-blurb {
         margin: 50px;
         margin-bottom: 20px;
+        width: 70vw;
     }
     .collab-button {
         width: 12rem;
