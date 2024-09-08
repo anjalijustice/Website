@@ -11,30 +11,40 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <label class="hide-desktop hamburger-menu">
-                <input type="checkbox">
-            </label> 
-            <aside class="sidebar hide-desktop">
+        <div class="content">
+            <header>
+                <label class="hide-desktop hamburger-menu">
+                    <input type="checkbox">
+                </label> 
+                <aside class="sidebar hide-desktop">
+                    <nav>
+                        <div><a href="index.html">Home</a></div>
+                        <div><a href="about.html">About Me</a></div>
+                        <div><a href="consultations.html">Consultations</a></div>
+                        <div><a href="mediakit.html">Media Kit</a></div>
+                        <div><a href="contact.html">Contact</a></div>
+                    </nav>
+                </aside>
                 <nav>
-                    <div><a href="index.html">Home</a></div>
-                    <div><a href="about.html">About Me</a></div>
-                    <div><a href="blog.html">Blog</a></div>
-                    <div><a href="mediakit.html">Media Kit</a></div>
-                    <div><a href="contact.html">Contact</a></div>
+                    <div class="hide-mobile" id="nav">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Me</a>
+                        <div class="dropdown">
+                          <button class="dropbtn"><a href="consultations.html">Consultations</a></button>
+                          <div class="dropdown-content">
+                            <a href="consultVan.html">Vanlife</a>
+                            <a href="consultWeb.html">Website Development</a>
+                          </div>
+                        </div>
+                        <a href="mediakit.html">Media Kit</a>
+                        <a href="contact.html">Contact</a>
+                      </div>
                 </nav>
-            </aside>
-            <nav>
-                <ul class="hide-mobile" id="nav">
-                    <li id="list"><a href="index.html">Home</a></li>
-                    <li id="list"><a href="about.html">About Me</a></li>
-                    <li id="list"><a href="blog.html">Blog</a></li>
-                    <li id="list"><a href="mediakit.html">Media Kit</a></li>
-                    <li id="list"><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <h1 class="section-header">Hi I'm Anjali</h1>
+            </header>
+            <div class="section-header">
+                <br>
+                <h1>Hi Im Anjali</h1>
+            </div>
     </div>
 
     <div class="about-container">

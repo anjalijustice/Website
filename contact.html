@@ -10,36 +10,44 @@
     <link rel="stylesheet" href="style/contact.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <label class="hide-desktop hamburger-menu">
-                <input type="checkbox">
-            </label> 
-            <aside class="sidebar hide-desktop">
-                <nav>
-                    <div><a href="index.html">Home</a></div>
-                    <div><a href="about.html">About Me</a></div>
-                    <div><a href="blog.html">Blog</a></div>
-                    <div><a href="mediakit.html">Media Kit</a></div>
-                    <div><a href="contact.html">Contact</a></div>
-                </nav>
-            </aside>
+    <header>
+        <label class="hide-desktop hamburger-menu">
+            <input type="checkbox">
+        </label> 
+        <aside class="sidebar hide-desktop">
             <nav>
-                <ul class="hide-mobile" id="nav">
-                    <li id="list"><a href="index.html">Home</a></li>
-                    <li id="list"><a href="about.html">About Me</a></li>
-                    <li id="list"><a href="blog.html">Blog</a></li>
-                    <li id="list"><a href="mediakit.html">Media Kit</a></li>
-                    <li id="list"><a href="contact.html">Contact</a></li>
-                </ul>
+                <div><a href="index.html">Home</a></div>
+                <div><a href="about.html">About Me</a></div>
+                <div><a href="consultations.html">Consultations</a></div>
+                <div><a href="mediakit.html">Media Kit</a></div>
+                <div><a href="contact.html">Contact</a></div>
             </nav>
-        </header>
-        <h1 class="section-header">Get in Touch!</h1>
+        </aside>
+        <nav>
+            <div class="hide-mobile" id="nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <div class="dropdown">
+                  <button class="dropbtn"><a href="consultations.html">Consultations</a></button>
+                  <div class="dropdown-content">
+                    <a href="consultVan.html">Vanlife</a>
+                    <a href="consultWeb.html">Website Development</a>
+                  </div>
+                </div>
+                <a href="mediakit.html">Media Kit</a>
+                <a href="contact.html">Contact</a>
+              </div>
+        </nav>
+    </header>
+    <div class="section-header">
+        <br>
+      <h1>Get In Touch</h1>
     </div>
     <section id="contact">
         <div class="contact-container">
             <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
                 <div class="contact-left-title"> 
+                    <h3>Send me a message</h3>
                 </div>
                 <input type="hidden" name="access_key" value="b2fe3b29-1ab3-4600-b302-099a3314a0b0">
                 <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
@@ -55,7 +63,7 @@
                     Looking to collab? Please provide as much information as possible so I can serve you best.
                     <br>
                     <br>
-                    You can also connect with me on social media!
+                    Connect with me on social media!
                 </p>
                 <ul class="social-icon">
                     <li class="social-icon__item"><a class="social-icon__link" style="color: #E1306C" href="https://instagram.com/anjalijustice">
@@ -71,49 +79,10 @@
                         <ion-icon name="logo-facebook"></ion-icon>
                         </a></li>
                 </ul>
-                <br>
                 <br>
                 <img src="img/logo.png" alt="">
             </div>
         </div>
-
-        <!-- <h1 class="section-header">Contact</h1> 
-        <div class="contact-wrapper">  
-            <div class="contact-blurb">
-                <h1>Send me a message!</h1>
-                <br>
-                <p>
-                    If you have questions, want to chat, or are inquiring about a brand collaboration I would love to hear from you! Send me a message using this form and I'll email you back shortly.
-                    <br>
-                    <br>
-                    Looking to collab? Please provide as much information as possible so I can serve you best.
-                    <br>
-                    <br>
-                    You can also connect with me on social media!
-                </p>
-                <ul class="social-icon">
-                    <li class="social-icon__item"><a class="social-icon__link" style="color: #E1306C" href="https://instagram.com/anjalijustice">
-                        <ion-icon name="logo-instagram"></ion-icon>
-                        </a></li>
-                    <li class="social-icon__item"><a class="social-icon__link" style="color: #FF0000" href="https://youtube.com/@anjalijustice">
-                        <ion-icon name="logo-youtube"></ion-icon>
-                        </a></li>
-                    <li class="social-icon__item"><a class="social-icon__link" style="color: #E60023" href="https://pinterest.com/anjalijustice">
-                        <ion-icon name="logo-pinterest"></ion-icon>
-                        </a></li>
-                    <li class="social-icon__item"><a class="social-icon__link" style="color: #4267B2" href="https://facebook.com/anjalijusticevanlife">
-                        <ion-icon name="logo-facebook"></ion-icon>
-                        </a></li>
-                </ul>
-            </div>
-            <div class="form-group">
-                
-            </div>
-            <div class="form-group">
-                <script type="text/javascript" src="https://form.jotform.com/jsform/241585151937159"></script>
-            </div>
-        </div> -->
-        
       </section>  
     <footer class="footer">
         <ul class="footer-social-icon">

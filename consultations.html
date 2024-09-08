@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anjali Justice</title>
+    <link rel="stylesheet" href="style/consult.css">
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/footer.css">
+</head>
+<body>
+    <div class="content">
+        <header>
+            <label class="hide-desktop hamburger-menu">
+                <input type="checkbox">
+            </label> 
+            <aside class="sidebar hide-desktop">
+                <nav>
+                    <div><a href="index.html">Home</a></div>
+                    <div><a href="about.html">About Me</a></div>
+                    <div><a href="blog.html">Blog</a></div>
+                    <div><a href="mediakit.html">Media Kit</a></div>
+                    <div><a href="contact.html">Contact</a></div>
+                </nav>
+            </aside>
+            <nav>
+              <div class="hide-mobile" id="nav">
+                  <a href="index.html">Home</a>
+                  <a href="about.html">About Me</a>
+                  <div class="dropdown">
+                    <button class="dropbtn"><a href="consultations.html">Consultations</a></button>
+                    <div class="dropdown-content">
+                      <a href="consultVan.html">Vanlife</a>
+                      <a href="consultWeb.html">Website Development</a>
+                    </div>
+                  </div>
+                  <a href="mediakit.html">Media Kit</a>
+                  <a href="contact.html">Contact</a>
+                </div>
+          </nav>
+        </header>
+        <div class="section-header">
+            <br>
+            <h1>Work With Me</h1>
+            <p class="section-sub-header">Personalized guidance for your lifestyle</p>
+        </div>
+        <div class="consult-container">
+            <p>Whether you're dreaming of hitting the road in a van or need help designing and building your website, I offer personalized 1:1 consultations to help you get there faster, with fewer headaches. Choose your focus below to get started.</p>
+            <br>
+            <button type="button" class="collapsible">Vanlife</button>
+              <div class="collapsible-content">
+                <div>
+                  <br>
+                  <h4>Ready to turn your vanlife dreams into reality?</h4>
+                  <p>I'll help you design a layout that fits your lifestyle, avoid costly and frustrating mistakes, and choose the best materials for your build. From storage solutions to practical advice on power and plumbing, I'll guide you through every step of the process so you can hit the road knowing your van is built to last.</p>
+                </div>
+                <button type="button" class="booking-button"><a href="/consultVan.html">More about vanlife consultations</a></button>
+              </div>
+            <button type="button" class="collapsible">Website Development</button>
+              <div class="collapsible-content">
+                <div>
+                  <br>
+                  <h4>Want a website but don't know where to start?</h4>
+                  <p>I'll guide you through creating a professional, user-friendly site without the hassle of subscription fees. Whether you're launching your first site or improving an existing one, I'll show you how to create something that reflects your style and works for your audience. Let's make the website-building process simple, affordable, and completley under your control.</p>
+                </div>
+                <button type="button" class="booking-button"><a href="/consultWeb.html">More about website consultations</a></button>
+              </div>
+            <br>
+            <div class="image-container">
+              <img src="/img/vanbuild.jpg" alt="" >
+              <img src="/img/pendleyVan.jpeg" alt="" class="hide-mobile">
+              <img src="/img/moabVan.jpg" alt="" class="hide-mobile">
+            </div>
+        </div>
+        
+        <footer class="footer">
+          <ul class="footer-social-icon">
+              <li class="footer-social-icon__item"><a class="footer-social-icon__link" href="https://instagram.com/anjalijustice">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                  </a></li>
+              <li class="footer-social-icon__item"><a class="footer-social-icon__link" href="https://youtube.com/@anjalijustice">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                  </a></li>
+              <li class="footer-social-icon__item"><a class="footer-social-icon__link" href="https://pinterest.com/anjalijustice">
+                  <ion-icon name="logo-pinterest"></ion-icon>
+                  </a></li>
+              <li class="footer-social-icon__item"><a class="footer-social-icon__link" href="https://facebook.com/anjalijusticevanlife">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                  </a></li>
+          </ul>
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="/index.html">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="/blog.html">Blog</a></li>
+            <li class="menu__item"><a class="menu__link" href="/mediakit.html">Media Kit</a></li>
+            <li class="menu__item"><a class="menu__link" href="/contact.html">Contact</a></li>
+      
+          </ul>
+          <p>2023 Anjali Justice | All Rights Reserved</p>
+        </footer>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script> //Accordion menu JavaScript (makes the menu open/close)
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        }
+      </script>
+  </body>
+  </html>

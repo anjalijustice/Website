@@ -15,11 +15,14 @@ body {
     text-align: center;
     margin: 0 auto;
     padding: 20px 0;
-    font: 300 30px 'Oswald', sans-serif;
+    font: 300 20px 'Oswald', sans-serif;
     color: #333;
     text-transform: uppercase;
     letter-spacing: 6px;
-  }
+}
+.section-header p{
+    font-size: 20px;
+}
 .hide-mobile {
     display: none;
 }

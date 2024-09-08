@@ -15,7 +15,6 @@ body {
   align-items:flex-start;
   justify-content: space-evenly;
 }
-
 .contact-left {
   display: flex;
   flex-direction: column;
@@ -27,7 +26,6 @@ body {
   text-align: center;
   margin: 0 auto;
   padding: 20px 0;
-  font: 300 30px 'Oswald', sans-serif;
   color: #333;
   text-transform: uppercase;
   letter-spacing: 6px;
@@ -104,26 +102,30 @@ body {
   position: relative;
   max-width: 1200px;
 }
-
 .contact-inputs {
   width: 400px;
 }
 .contact-right {
   display: block;
-  padding-top: 80px;
+  padding-top: 50px;
 }
 .contact-right p {
   width: 500px;
 }
 .contact-right img{
-  width: 400px;
+  width: 300px;
 }
-
 .list-item {
   line-height: 4;
   color: #aaa;
 }
 .social-icon {
   justify-content: left;
+}
+.section-header {
+  font-size: 30px;
+}
+.section-header p {
+  font-size: 20px;
 }
 }
