@@ -2,6 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body, html {
+  height: 100%;
+  width: 100%;
 }
 body {
   background-color: white;
@@ -9,11 +14,45 @@ body {
 .hide-mobile {
   display: none;
 }
+.hide-desktop {
+  display: block;
+}
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.about-image {
+  background-image: url("/img/aboutMe/alabamaHills.JPG");
+  height: 350px;
+  background-position: center top;
+}
+.land-image {
+  background-image: url("/img/aboutMe/vanMobile.JPG");
+  height: 450px;
+  background-size: cover;
+}
+.sea-image {
+  background-image: url("/img/aboutMe/boatMobile.jpg");
+  height: 450px;
+  background-size: cover;
+}
+.air-image {
+  background-image: url("/img/aboutMe/planeMobile.jpeg");
+  height: 450px;
+  background-size: cover;
+}
+.roadless-image {
+  background-image: url("/img/aboutMe/saltFlatsDistant.jpeg");
+  height: 450px;
+  background-size: cover;  
+}
 .section-header {
   text-align: center;
   margin: 0 auto;
-  padding: 20px 0;
-  font: 20px 'Montserrat', 'sans-serif';
+  padding: 40px 0;
+  font-size: 30px;
   color: #333;
   text-transform: uppercase;
   letter-spacing: 6px;
@@ -23,19 +62,65 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 0;
+    justify-content: center;
+    padding: 30px;
 }
 .about-container p {
   text-align: center;
   width: 85vw;
+  font-size: 16px;
 }
 
 .about-container img {
   display: none;
 }
 
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 760px){
+  .hide-mobile {
+    display: block;
+  }
+  .hide-desktop {
+    display: none;
+  }
   .about-container img {
     display: block;
+  }
+  .about-container p {
+    width: 70vw;
+    font-size: 18px;
+  }
+  .section-header {
+    font-size: 40px;
+    padding: 10px 0;
+  }
+  .about-image {
+    background-image: url("/img/aboutMe/aboutBanner.jpg");
+    height: 25vh;
+    background-position: center top;
+  }
+  .land-image {
+    height: 500px;
+    background-position: center 65%;
+  }
+  .sea-image {
+    background-image: url("/img/aboutMe/droneBoat.jpg");
+    height: 500px;
+    background-position: center 80%;
+
+  }
+  .air-image {
+    height: 500px;
+    background-position: center 75%;
+  }
+  .roadless-image {
+    height: 500px;
+  }
+}
+@media only screen and (min-width: 1200px){
+  .about-image {
+    height: 60%;
+  }
+  .land-image {
+    background-image: url("/img/AboutMe/landLaptop.JPG");
   }
 }

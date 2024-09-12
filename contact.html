@@ -47,7 +47,7 @@
         <div class="contact-container">
             <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
                 <div class="contact-left-title"> 
-                    <h3>Send me a message</h3>
+                    <h3 class="hide-mobile">Send me a message</h3>
                 </div>
                 <input type="hidden" name="access_key" value="b2fe3b29-1ab3-4600-b302-099a3314a0b0">
                 <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
@@ -55,7 +55,10 @@
                 <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
                 <button type="submit">Submit</button>
             </form>
-            <div class="contact-right">
+            <div class="contact-right hide-desktop">
+                <img class="mobile-logo hide-desktop" src="img/logo.png" alt="">
+            </div>
+            <div class="contact-right hide-mobile">
                 <p>
                     If you have questions, want to chat, or are inquiring about a brand collaboration I would love to hear from you! Send me a message using this form and I'll email you back shortly.
                     <br>
@@ -83,7 +86,7 @@
                 <img src="img/logo.png" alt="">
             </div>
         </div>
-      </section>  
+    </section>
     <footer class="footer">
         <ul class="footer-social-icon">
             <li class="footer-social-icon__item"><a class="footer-social-icon__link" href="https://instagram.com/anjalijustice">

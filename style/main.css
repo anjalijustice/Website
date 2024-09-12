@@ -2,11 +2,19 @@
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Alef&display=swap');
 
+body, html {
+    height: 100%;
+}
 body {
     margin: 0;
     font-family: 'Montserrat', 'sans-serif';
     position: relative;
-    min-height: 100vh;
+}
+.hide-mobile{
+    display: none;
+}
+.hide-desktop {
+    display: block;
 }
 h1 {
     font-family: 'Montserrat', 'sans-serif';
@@ -15,26 +23,47 @@ h1 {
     text-align: center;
     padding: .8em 1.2em;
 }
-.section-header {
-    text-align: center;
-    margin: 0 auto;
-    padding: 20px 0;
-    font: 300 20px 'Montserrat', 'sans-serif';
-    color: #333;
-    text-transform: uppercase;
-    letter-spacing: 6px;
-}
 .hide-mobile {
     display: none;
 }
-.picture-container img{
+.picture-container {
+    background-image: url("/img/mendocino.jpeg");
+    height: 350px;
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+}
+.collab-image {
+    background-image: url("/img/icelandMobile.JPG");
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-header {
     width: 100%;
-    margin-top: -3rem;
-    z-index: 1;
+    font: 30px 'Montserrat', 'sans-serif';
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+.section-sub-header {
+    width: 100%;
+    font: 15px 'Montserrat', 'sans-serif';
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    padding: 5px 0px 20px 0px;
 }
 .about-container {
-    margin: 30px;
     background-color: #f2f0eb;
+    padding: 30px;
 }
 .about-container h1 {
     text-align: center;
@@ -46,24 +75,10 @@ h1 {
 .about-text h3 {
     padding-top: 2rem;
 }
-.instagram-container {
-    text-align: center;
-    height: 265px;
-    padding: 0;
-    padding-top: 10px;
-}
-.instagram-container h2 {
-    z-index: 3;
-}
-.instagram-container iframe{
-    position: relative;
-    top: -40px;
-    z-index: 1;
-}
 .collab-container {
     text-align: center;
     background-color: white;
-    padding: 10px 0;
+    padding: 30px;
 }
 .collab-blurb {
     padding: 0 5px;
@@ -83,12 +98,23 @@ h1 {
 }
 
 @media only screen and (min-width: 760px){
+    .section-header {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 30px;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+    }
     section h1 {
         font-size: 1.9em;
     }
-    .subhead {
-        font-size: 1.4em;
-    }  
+    .section-sub-header {
+        font-size: 20px;
+    }
+    .picture-container {
+        background-position: center -55%;
+    }
     .about-container h1 {
         margin-bottom: 50px;
         font-size: 2.5em;
@@ -118,35 +144,30 @@ h1 {
     .hide-desktop {
         display: none;
     }
-    .picture-container {
-        padding-top: 80px;
-    }
-    .picture-container .main-img {
-        width: 100%;
+    p {
+        font-size: 18px;
     }
     .about-section {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         max-width: 100%;
     }
+    .about-text h3 {
+        padding-top: 0;
+    }
     .about-text {
-        margin-left: 50px;
-        width: 600px;
+        width: 500px;
     }
     .about-img img{
         width: 500px;
         height: 500px;
-        margin-right: 50px;
         object-fit: cover;
     }
-    .instagram-container {
-        padding: 0;
-        padding-top: 10px;
-    }
-    .instagram-container iframe{
-        position: relative;
-        top: -40px;
+    .collab-image {
+        background-image: url("/img/collab-image.JPG");
+        height: 40%;
+        background-size: cover;
     }
     .collab-container {
         padding: 10px 0;
@@ -162,5 +183,15 @@ h1 {
     .collab-button {
         width: 12rem;
         height: 3rem;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .picture-container {
+        background-image: url("/img/desktopBanner.jpg");
+        background-position: center top;
+        height: 40%;
+    }
+    .section-sub-header {
+        margin-bottom: 30px;
     }
 }

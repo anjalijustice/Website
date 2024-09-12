@@ -4,10 +4,10 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-.hide-mobile-web {
+.hide-mobile {
   display: none;
 }
-.hide-desktop-web {
+.hide-desktop {
   display: block;
 }
 h1 {
@@ -231,15 +231,18 @@ body {
 }
 /* Laptop size */
 @media only screen and (min-width: 1200px){
-  .hide-mobile-web {
+  .hide-mobile {
     display: block;
   }
-  .hide-desktop-web {
+  .hide-desktop {
     display: none;
   }
   #more {display: block;}
   .consult-container {
     width: 80vw;
+  }
+  .booking-button {
+    width: 50%;
   }
   .image-container {
     justify-content: space-between;

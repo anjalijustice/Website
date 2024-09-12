@@ -7,7 +7,7 @@
 header {
   display: flex;
   justify-content: space-between;
-  height: 40px;
+  height: 0px;
   z-index: -1;
 }
 :root {
@@ -20,10 +20,10 @@ header {
   --animation-timing: 200ms ease-in-out;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
 }
-.hide-mobile {
+.hide-mobile-nav {
   display: none;
 }
-.hide-desktop {
+.hide-desktop-nav {
   display: block;
 }
 .hamburger-menu {
@@ -98,11 +98,14 @@ header {
 }
 
 @media only screen and (min-width: 1024px){
-  .hide-mobile{
+  .hide-mobile-nav{
       display: block;
   }
-  .hide-desktop {
+  .hide-desktop-nav {
       display: none;
+  }
+  header {
+    height: 40px;
   }
   nav {
       width: 100%;

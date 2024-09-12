@@ -11,10 +11,10 @@
 </head>
 <body>
     <header>
-        <label class="hide-desktop hamburger-menu">
+        <label class="hide-desktop-nav hamburger-menu">
             <input type="checkbox">
         </label> 
-        <aside class="sidebar hide-desktop">
+        <aside class="sidebar hide-desktop-nav">
             <nav>
                 <div><a href="index.html">Home</a></div>
                 <div><a href="about.html">About Me</a></div>
@@ -24,7 +24,7 @@
             </nav>
         </aside>
         <nav>
-            <div class="hide-mobile" id="nav">
+            <div class="hide-mobile-nav" id="nav">
                 <a href="index.html">Home</a>
                 <a href="about.html">About Me</a>
                 <div class="dropdown">
@@ -44,7 +44,7 @@
         <h1>Vanlife Solutions</h1>
         <p>Everything you need to know about life on the road</p>
     </div>
-    <div class="hide-mobile-web">
+    <div class="hide-mobile">
       <div class="van-container">
         <div class="flip-card">
           <div class="flip-card-inner">
@@ -78,29 +78,29 @@
         </div>
       </div>
     </div> 
-    <div class="hide-desktop-web">
+    <div class="hide-desktop">
       <div class="van-container">
         <button type="button" class="collapsible">Personalized solutions</button>
           <div class="collapsible-content">
               Building a website can feel overwhelming. I specialize in helping those with little to no experience in web design get their first website up and running - whether you're starting from scratch or need help enhancing your current site.</p>
-            <button type="button" class="booking-button"><a href="">Book your consultation</a></button>
+            <button type="button" class="booking-button"><a href="contact.html">Book your consultation</a></button>
           </div>
           <button type="button" class="collapsible">Actionable steps</button>
           <div class="collapsible-content">
             I offer guidance on setting up a basic HTML static site, which eliminates the need for monthly subscription fees on sites like Squarespace. This means you can have a professional, functional site that's completley under your control and scalable as your business or personal brand grows.</p>
-            <button type="button" class="booking-button"><a href="">Book your consultation</a></button>
+            <button type="button" class="booking-button"><a href="contact.html">Book your consultation</a></button>
           </div>
           <button type="button" class="collapsible">Experience based advice</button>
           <div class="collapsible-content">
             Whether you need help creating your site's structure, integrating Canva designs, or simply understanding the basics of web design, I'm here to make the process as smooth and stress-free as possible.</p>
-            <button type="button" class="booking-button"><a href="">Book your consultation</a></button>
+            <button type="button" class="booking-button"><a href="contact.html">Book your consultation</a></button>
           </div>
       </div>
     </div>
     <div class="history-container">
       <div class="history-left">
-        <h1>Hi I'm Anjali</h1>
-        <p>I’ve been living on the road for over three years with experiences in two vans and a vintage boat. Whether you’re dreaming of hitting the road or need help with your current van, I’m here to guide you through every step.<span class="hide-desktop-web" id="dots">...</span><span class="hide-desktop-web" id="more">
+        <h1>How can I help?</h1>
+        <p>I’ve been living on the road for over three years with experiences in two vans and a vintage boat. Whether you’re dreaming of hitting the road or need help with your current van, I’m here to guide you through every step.<span class="hide-desktop" id="dots">...</span><span class="hide-desktop" id="more">
         <br>
         <br>
         I’ve tackled a range of van builds, from budget-friendly to luxurious, and I bring a unique set of skills to the table. With hands-on experience in cabinet building and a deep understanding of tiny home living, I can help you design a van that’s not only stylish but also durable and practical. My journey has taught me what works, what doesn’t, and how to make the most of small spaces.
@@ -111,11 +111,11 @@
         <br>
         Let’s make your vanlife dreams a reality! Book your 1:1 consultation to start your vanlife journey or refine your current setup. I look forward to helping you hit the road with confidence.
       </span></p>
-      <button onclick="myFunction()" class="hide-desktop-web" id="readMoreBtn">Read more</button>
+      <button onclick="myFunction()" class="hide-desktop" id="readMoreBtn">Read more</button>
       <button type="button" class="booking-button"><a href="/contact.html">Book your 1:1 call</a></button>
       </div>
       <div class="history-right">
-        <img src="/img/vanbuild.jpg" alt="">
+        <img src="/img/Consultations/vanbuild.jpg" alt="">
       </div>
     </div>
     <div class="consult-contact">
@@ -157,6 +157,22 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script> //Accordion menu JavaScript (makes the menu open/close)
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
     <script> //Read more button
       function myFunction() {
         var dots = document.getElementById("dots");
