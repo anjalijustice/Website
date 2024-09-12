@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 body, html {
   height: 100%;
@@ -94,9 +94,10 @@ body {
     padding: 10px 0;
   }
   .about-image {
-    background-image: url("/img/aboutMe/aboutBanner.jpg");
+    background-image: url("/img/AboutMe/icelandPlane.JPG");
     height: 25vh;
-    background-position: center top;
+    background-position: center 60%;
+    background-size: cover;
   }
   .land-image {
     height: 500px;
@@ -118,7 +119,7 @@ body {
 }
 @media only screen and (min-width: 1200px){
   .about-image {
-    height: 60%;
+    height: 70%;
   }
   .land-image {
     background-image: url("/img/AboutMe/landLaptop.JPG");
