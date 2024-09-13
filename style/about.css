@@ -17,6 +17,10 @@ body {
 .hide-desktop {
   display: block;
 }
+.divider {
+  border-top: 2px solid #333;
+  margin: 20px;
+}
 .parallax {
   background-attachment: scroll;
   background-position: center 80%;
