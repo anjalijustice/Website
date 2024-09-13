@@ -29,21 +29,21 @@ body {
   height: 300px;
 }
 .about-image {
-  background-image: url("/img/aboutMe/alabamaHills.JPG");
+  background-image: url("/img/AboutMe/alabamaHills.JPG");
   height: 350px;
   background-position: center top;
 }
 .land-image {
-  background-image: url("/img/aboutMe/vanMobile.JPG");
+  background-image: url("/img/AboutMe/vanMobile.JPG");
 }
 .sea-image {
-  background-image: url("/img/aboutMe/boatMobile.jpg");
+  background-image: url("/img/AboutMe/boatMobile.jpg");
 }
 .air-image {
-  background-image: url("/img/aboutMe/planeMobile.jpeg");
+  background-image: url("/img/AboutMe/planeMobile.jpeg");
 }
 .roadless-image {
-  background-image: url("/img/aboutMe/saltFlatsDistant.jpeg");
+  background-image: url("/img/AboutMe/saltFlatsDistant.jpeg");
 }
 .section-header, .section-title {
   text-align: center;
@@ -110,7 +110,7 @@ body {
     color: white;
   }
   .sea-image {
-    background-image: url("/img/aboutMe/droneBoat.jpg");
+    background-image: url("/img/AboutMe/droneBoat.jpg");
   }
   .air-image {
     background-position: center 75%;
