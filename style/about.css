@@ -74,7 +74,21 @@ body {
 .about-container img {
   display: none;
 }
-
+.booking-button {
+  padding: 7px;
+  margin: 10px 0;
+  padding: 10px;
+  color: white;
+  font-size: 15px;
+  border: black;
+  border-radius: 10px;
+  background: #989f97;
+  cursor: pointer;
+}
+.booking-button a {
+  text-decoration: none;
+  color: inherit;
+}
 /* Ipad mini */
 @media only screen and (min-width: 760px){
   .hide-mobile {
