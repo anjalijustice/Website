@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  font-size: 15px;
 }
 .hide-mobile {
   display: none;
@@ -54,7 +55,7 @@ body {
 .history-container {
   margin: auto;
   text-align: center;
-  padding: 20px 0;
+  padding: 20px 10px;
 }
 .history-left {
   display: flex;
@@ -110,9 +111,12 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.collapsible-content p {
+  margin: 15px;
+}
 .collapsible:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
+  font-size: 15px;
   color: white;
   float: right;
   margin-left: 5px;
@@ -121,13 +125,13 @@ body {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 .booking-button {
-  padding: 7px;
+  padding: 10px;
   margin: 10px 0;
   width: 75%;
   color: white;
   font-size: 15px;
   border: black;
-  border-radius: 20px;
+  border-radius: 25px;
   background: #989f97;
   cursor: pointer;
 }
@@ -135,52 +139,63 @@ body {
   text-decoration: none;
   color: inherit;
 }
-.flip-card {
-  background-color: transparent;
-  width: 250px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-  border-radius: 20px;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-  border-radius: 20px;
-}
-.flip-card-front {
-  background-color: #989f97;
-  color: black;
-  text-align: center;
+.rates-container {
+  width: 100vw;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-}
-.flip-card-back {
+  justify-content: center;
   background-color: #f2f0eb;
-  color: black;
-  transform: rotateY(180deg);
+}
+.rates-container h1 {
+  text-align: center;
+}
+.rateinfo {
+  width: 70%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 20px;
 }
-.flip-card-back p {
-  font-size: small;
+
+/* Vanlife rate info */
+.rateinfo-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Web dev rate info */
+.rateinfo-left, .rateinfo-right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.rateinfo-left h2, .rateinfo-right h2, .rateinfo-center h2{
+  font-size: 25px;
+}
+.rateinfo-left p, .rateinfo-right p, ul, .rateinfo-center p{
+  margin: 20px 10px;
+}
+.services-container {
+  display: none;
+}
+.services-container p {
   margin: 10px;
+  padding: 15px;
+  width: 250px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  border-style: solid;
+  border-color: #667663;
+  border-width: 3px;
 }
 .consult-contact {
   width: 100%;
@@ -190,7 +205,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f2f0eb;
+  background-color: white;
 }
 .contact-left {
   width: 80vw;
@@ -234,6 +249,65 @@ body {
   background: #989f97;
   cursor: pointer;
 }
+
+/* Ipad mini */
+@media only screen and (min-width: 760px){
+  * {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  .collapsible {
+    font-size: 20px;
+  }
+  .collapsible-content {
+    align-items: left;
+  }
+  .collapsible-content p {
+    font-size: 20px;
+    margin: 20px;
+  }
+  .booking-button {
+    padding: 15px;
+    width: 40%;
+  }
+  .rateinfo {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .rateinfo-left, .rateinfo-right{
+    width: 75%;
+    margin: 0 10px;
+  }
+  .rateinfo-center {
+    width: 60%;
+  }
+  .rateinfo-left h2, .rateinfo-right h2, .rateinfo-center h2{
+    font-size: 30px;
+  }
+  .services-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .services-container p {
+    margin: 10px;
+    padding: 15px;
+    width: 250px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    border-style: solid;
+    border-color: #667663;
+    border-width: 3px;
+  }
+}
+
 /* Laptop size */
 @media only screen and (min-width: 1200px){
   .hide-mobile {
@@ -241,6 +315,57 @@ body {
   }
   .hide-desktop {
     display: none;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    border-radius: 20px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius: 20px;
+  }
+  .flip-card-front {
+    background-color: #989f97;
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+  .flip-card-front h2 {
+    font-size: 30px;
+  }
+  .flip-card-back {
+    background-color: #f2f0eb;
+    color: black;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flip-card-back p {
+    font-size: small;
+    margin: 10px;
   }
   #more {display: block;}
   .consult-container {
@@ -279,6 +404,7 @@ body {
     width: 700px;
   }
   .history-left p {
+    font-size: 20px;
     width: 50vw;
   }
   .history-right {
@@ -291,7 +417,7 @@ body {
     object-position: 0 100%;
   }
   .consult-contact {
-    background-color: white;
+    background-color: f2f0eb;
   }
   .contact-inputs {
     width: 50vw;
