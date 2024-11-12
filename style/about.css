@@ -58,7 +58,6 @@ body {
   padding: 50px 0;
 }
 .about-container {
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,7 +65,7 @@ body {
     padding: 30px;
 }
 .about-container p {
-  text-align: center;
+  text-align: justify;
   width: 85vw;
   font-size: 16px;
 }
@@ -105,7 +104,7 @@ body {
     font-size: 18px;
   }
   .parallax {
-    height: 800px;
+    height: 500px;
   }
   .about-image {
     background-image: url("/img/AboutMe/icelandPlane.JPG");
@@ -137,6 +136,11 @@ body {
 @media only screen and (min-width: 1200px){
   .parallax {
     background-attachment: fixed;
+  }
+  .about-container p {
+    width: 55vw;
+    font-size: 18px;
+    padding-top: 10px;
   }
   .about-image {
     height: 70%;
