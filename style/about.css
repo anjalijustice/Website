@@ -35,15 +35,25 @@ body {
 }
 .land-image {
   background-image: url("/img/AboutMe/vanMobile.JPG");
+  -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 }
 .sea-image {
   background-image: url("/img/AboutMe/boatMobile.jpg");
+  -webkit-clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+  clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
 }
 .air-image {
   background-image: url("/img/AboutMe/planeMobile.jpeg");
+  background-position: 70%;
+  -webkit-clip-path: polygon(50% 0%,100% 38%,100% 100%,0% 100%,0% 38%);
+  clip-path: polygon(50% 0%,100% 38%,100% 100%,0% 100%,0% 38%);
 }
 .roadless-image {
   background-image: url("/img/AboutMe/saltFlatsDistant.jpeg");
+  background-position: top;
+  -webkit-clip-path: polygon(0% 10%,100% 0%,100% 90%,0% 100%);
+  clip-path: polygon(0% 10%,100% 0%,100% 90%,0% 100%);
 }
 .section-header, .section-title {
   text-align: center;
@@ -64,6 +74,9 @@ body {
     justify-content: center;
     padding: 30px;
 }
+.about-container h3 {
+  margin-bottom: 10px;
+}
 .about-container p {
   text-align: justify;
   width: 85vw;
@@ -74,13 +87,13 @@ body {
   display: none;
 }
 .booking-button {
-  padding: 7px;
   margin: 10px 0;
   padding: 10px;
+  width: 50vw;
   color: white;
   font-size: 15px;
   border: black;
-  border-radius: 10px;
+  border-radius: 20px;
   background: #989f97;
   cursor: pointer;
 }

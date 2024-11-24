@@ -18,7 +18,11 @@
             <nav>
                 <div><a href="index.html">Home</a></div>
                 <div><a href="about.html">About Me</a></div>
-                <div><a href="consultations.html">Consultations</a></div>
+                <button class="dropdown-btn">Consultations</button>
+                    <div class="dropdown-container">
+                        <a href="consultVan.html">Vanlife</a>
+                        <a href="consultWeb.html">Website Development</a>
+                    </div>
                 <div><a href="mediakit.html">Media Kit</a></div>
                 <div><a href="contact.html">Contact</a></div>
             </nav>
@@ -170,22 +174,8 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script> //Accordion menu JavaScript (makes the menu open/close)
-      var coll = document.getElementsByClassName("collapsible");
-      var i;
-
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.maxHeight){
-            content.style.maxHeight = null;
-          } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-          }
-        });
-      }
-    </script>
+    <script src="script/accordion-menu.js"></script>
+    <script src="script/mobile-dropdown.js"></script>
     <script> //Read more button
       function myFunction() {
         var dots = document.getElementById("dots");
