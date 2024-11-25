@@ -119,6 +119,13 @@ body {
   .parallax {
     height: 500px;
   }
+  .socialLinks {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
   .about-image {
     background-image: url("/img/AboutMe/icelandPlane.JPG");
     background-position: center 60%;
