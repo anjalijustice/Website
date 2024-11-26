@@ -18,7 +18,7 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 6px;
   text-align: center;
-  padding: 20px;
+  padding: 50px 0 20px;
   width: 100%;
 }
 h4 {
@@ -137,6 +137,9 @@ h4 {
 }
 /* Laptop */
 @media only screen and (min-width: 1200px){
+h1 {
+  padding: 0;
+}
 .links-container {
   justify-content: space-evenly;
 }
