@@ -4,7 +4,7 @@
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background-color: white;
+  background-color: #f2f0eb;
   position: relative;
 }
 .hide-mobile {
@@ -18,10 +18,15 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 6px;
   text-align: center;
-  padding: 30px;
+  padding: 20px;
+  width: 100%;
+}
+h4 {
+  width: 100%;
+  margin: 0 5%;
+  font-size: small;
 }
 .links-container {
-  padding: 30px 0;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -32,17 +37,28 @@ h1 {
   width: 80vw;
   margin-bottom: 30px;
 }
-.build-links, .vanlife-links, .partner-links {
+.build-links, .vanlife-links, .partner-links, .sale-links{
   margin: 5px;
+  padding: 10px 0;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
 }
+.sale-links, .vanlife-links {
+  background-color: white;
+}
+.inner-page {
+  background-color: white;
+}
 .link-card {
+  background-color: white;
+  border-radius: 10px;
   width: 38vw;
+  height: 25vh;
   margin: 5px;
 }
 .link-card p{
@@ -51,11 +67,12 @@ h1 {
 }
 .link-card h3{
   text-transform: uppercase;
-  padding-bottom: 10px;
+  padding: 8px;
 }
 .link-card img {
   width: 30vw;
-  object-fit: fill;
+  height: 15vh;
+  object-fit:contain;
 }
 /* Ipad Pro */
 @media only screen and (min-width: 1024px){
@@ -65,9 +82,19 @@ h1 {
   .hide-desktop {
     display: none;
   }
+  h1 {
+    margin: 15px;
+  }
+  .links-container {
+    padding: 10px 0;
+  }
   .links-container p {
     font-size: 16px;
-    width: 60vw;
+    width: 70vw;
+  }
+  h4{
+    width: 100%;
+    padding: 0 15%;
   }
   .back-button button {
     position: absolute;
@@ -87,6 +114,14 @@ h1 {
   }
   .link-card {
     width: 33vw;
+    height: 30vh;
+    margin: 20px;
+  }
+  .partner-links .link-card {
+    height: 35vh;
+  }
+  .link-card h3 {
+    padding: 20px;
   }
   .link-card p {
     width: unset;
@@ -102,18 +137,19 @@ h1 {
 .links-container {
   justify-content: space-evenly;
 }
-.build-links, .vanlife-links, .partner-links {
+.build-links, .vanlife-links, .partner-links, .sale-links{
   display: flex;
   justify-content: space-around;
 }
 .link-card {
-  width: 15vw;
+  width: 20vw;
+  height: 40vh;
 }
-.build-links .link-card {
+.build-links .link-card, .partner-links .link-card {
   width: 30vw;
 }
-.vanlife-links .link-card {
-  width: 20vw;
+.partner-links .link-card {
+  height: 40vh;
 }
 .link-card h3{
   text-transform: uppercase;
@@ -123,6 +159,14 @@ h1 {
   height: 30vh;
   width: 15vw;
   object-fit: contain;
+}
+.sale-links .link-card img{
+  margin: 10px;
+  width: 12vw;
+  object-fit: contain;
+}
+.partner-links img {
+  height: 20vh;
 }
 .electrical-link {
   width: 25vw;

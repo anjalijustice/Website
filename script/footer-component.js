@@ -5,7 +5,7 @@ class Footer extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="/style/footer.css">
     <footer class="footer">
         <ul class="footer-social-icon">
             <li class="footer-social-icon__item"><a class="footer-social-icon__link" href="https://instagram.com/anjalijustice">
