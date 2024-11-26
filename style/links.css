@@ -61,6 +61,9 @@ h4 {
   height: 25vh;
   margin: 5px;
 }
+.partner-links .link-card {
+  height: 28vh;
+}
 .link-card p{
   margin: 10px;
   width: unset;
