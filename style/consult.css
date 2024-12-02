@@ -124,14 +124,21 @@ body {
 .active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
+.scheduling {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f0eb;
+  padding: 20px 0;
+}
 .booking-button {
   padding: 10px;
   margin: 10px 0;
-  width: 75%;
+  width: 55%;
   color: white;
   font-size: 15px;
   border: black;
-  border-radius: 25px;
+  border-radius: 15px;
   background: #989f97;
   cursor: pointer;
 }
@@ -239,6 +246,7 @@ body {
 }
 .contact-left button {
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 15px 30px;
   width: 50vw;
@@ -398,6 +406,7 @@ body {
     justify-content: space-around;
     padding: 50px;
     background-color: #f2f0eb;
+    gap: 20px;
   }
   .history-left {
     text-align: left;
@@ -408,11 +417,12 @@ body {
     width: 50vw;
   }
   .history-right {
-    display: block;
+    display: flex;
+    align-items: end;
   }
   .history-right img {
-    width: 600px;
-    height: 600px;
+    width: 40vw;
+    height: 85vh;
     object-fit: cover;
     object-position: 0 100%;
   }

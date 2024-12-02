@@ -107,11 +107,20 @@
         Feel free to explore my own website—built entirely by me—to see my work in action and to book a consultation. I look forward to the opportunity to collaborate with you!
       </span></p>
       <button onclick="myFunction()" class="hide-desktop" id="readMoreBtn">Read more</button>
-      <button type="button" class="booking-button"><a href="/contact.html">Book your 1:1 call</a></button>
+      <!-- <a href="/contact.html">Book your 1:1 call</a> -->
       </div>
       <div class="history-right">
         <img src="/img/Consultations/profilePic.jpg" alt="">
       </div>
+    </div>
+    <div class="scheduling">
+      <!-- Calendly link widget begin -->
+      <button type="button" class="booking-button">
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anjalijustice-info'});return false;">Book a Consult Today!</a>
+      </button>
+       <!-- Calendly link widget end -->
     </div>
     <div class="rates-container">
       <h1>Rates and Services</h1>
